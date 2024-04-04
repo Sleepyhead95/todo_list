@@ -1,5 +1,5 @@
 
-export default function MoveDown(tasks, index, setTasks) {
+export default function MoveDown({tasks, index, setTasks}) {
     function moveTaskDown(index) {
         if (index < tasks.length - 1) {
             const updatedTasks = [...tasks];

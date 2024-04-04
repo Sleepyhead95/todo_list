@@ -30,9 +30,9 @@ export default function AddTask() {
                 {tasks.map((task, index) => 
                  <li key={index}>
                     <span>{task}</span>
-                    <DeleteTask />
-                    <MoveUp />
-                    <MoveDown />
+                    <DeleteTask index={index} tasks={tasks} setTasks={setTasks} />
+                    <MoveUp index={index} tasks={tasks} setTasks={setTasks} />
+                    <MoveDown index={index} tasks={tasks} setTasks={setTasks} />
                     </li>
                 
                 )}

@@ -1,5 +1,5 @@
 
-export default function MoveUp(tasks, index, setTasks) {
+export default function MoveUp({tasks, index, setTasks}) {
     function moveTaskUp(index) {
         if (index > 0) {
             const updatedTasks = [...tasks];
